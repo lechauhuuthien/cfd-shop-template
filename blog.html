@@ -35,8 +35,6 @@
     <!-- Main CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-
 <body>
     <div class="page-wrapper">
         <header class="header">
@@ -90,10 +88,10 @@
                             <li>
                                 <a href="about.html">About Us</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="product.html">Product</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="blog.html">Blog</a>
                             </li>
                             <li>
@@ -177,16 +175,16 @@
         <main class="main">
             <div class="page-header text-center" style="background-image: url('assets/images/page-header-bg.jpg')">
                 <div class="container">
-                    <h1 class="page-title">Product</h1>
+                    <h1 class="page-title">Blog</h1>
                 </div>
             </div>
-            <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
                 <div class="container">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="index.html">Home</a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Product</li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
                     </ol>
                 </div>
             </nav>
@@ -194,233 +192,156 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-9">
-                            <div class="toolbox">
-                                <div class="toolbox-left">
-                                    <div class="toolbox-info"> Showing <span>9 of 56</span> Products </div>
+                            <div class="entry-container max-col-2" data-layout="fitRows">
+                                <div class="entry-item col-sm-6">
+                                    <article class="entry entry-grid">
+                                        <figure class="entry-media">
+                                            <a href="blog-single.html">
+                                                <img src="assets/images/blog/grid/3cols/post-1.jpg" alt="image desc">
+                                            </a>
+                                        </figure>
+                                        <div class="entry-body">
+                                            <div class="entry-meta">
+                                                <span>Nov 22, 2018</span>
+                                                <span class="meta-separator">|</span>
+                                                <span class="entry-author"> by <a href="#">John Doe</a>
+                                                </span>
+                                            </div>
+                                            <h2 class="entry-title">
+                                                <a href="blog-single.html">Cras ornare tristique elit.</a>
+                                            </h2>
+                                            <div class="entry-content">
+                                                <p>Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas vulputate ...</p>
+                                                <a href="blog-single.html" class="read-more">Read More</a>
+                                            </div>
+                                        </div>
+                                    </article>
                                 </div>
-                                <div class="toolbox-right">
-                                    <div class="toolbox-sort">
-                                        <label for="sortby">Sort by:</label>
-                                        <div class="select-custom">
-                                            <select name="sortby" id="sortby" class="form-control">
-                                                <option value="popularity" selected>Most Popular</option>
-                                                <option value="pricelow">Price Low to High</option>
-                                                <option value="pricehight">Price Hight to Low </option>
-                                                <option value="newest">Newest</option>
-                                                <option value="rating">Most Rated</option>
-                                            </select>
+                                <div class="entry-item col-sm-6">
+                                    <article class="entry entry-grid">
+                                        <figure class="entry-media">
+                                            <a href="blog-single.html">
+                                                <img src="assets/images/blog/grid/3cols/post-2.jpg" alt="image desc">
+                                            </a>
+                                        </figure>
+                                        <div class="entry-body">
+                                            <div class="entry-meta">
+                                                <span>Nov 22, 2018</span>
+                                                <span class="meta-separator">|</span>
+                                                <span class="entry-author"> by <a href="#">John Doe</a>
+                                                </span>
+                                            </div>
+                                            <h2 class="entry-title">
+                                                <a href="blog-single.html">Vivamus vestibulum ntulla necante.</a>
+                                            </h2>
+                                            <div class="entry-content">
+                                                <p>Morbi purus libero, faucibus commodo quis, gravida id, est. Vestibulumvolutpat, lacus a ultrices sagittis, mi neque euismod dui ...</p>
+                                                <a href="blog-single.html" class="read-more">Read More</a>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </article>
                                 </div>
-                            </div>
-                            <div class="products mb-3">
-                                <div class="row justify-content-center">
-                                    <div class="col-6 col-md-4 col-lg-4">
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="product-detail.html">
-                                                    <img src="assets/images/demos/demo-3/products/product-11.jpg"
-                                                        alt="Product image" class="product-image">
-                                                </a>
-                                                <div class="product-action-vertical">
-                                                    <a href="#" class="btn-product-icon btn-wishlist btn-expandable">
-                                                        <span>add to wishlist</span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action product-action-dark">
-                                                    <a href="#" class="btn-product btn-cart" title="Add to cart">
-                                                        <span>add to cart</span>
-                                                    </a>
-                                                </div>
-                                            </figure>
-                                            <div class="product-body">
-                                                <h3 class="product-title">
-                                                    <a href="product-detail.html">MacBook Pro 13" Display, i5</a>
-                                                </h3>
-                                                <div class="product-price"> $1,199.99 </div>
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width: 100%;"></div>
-                                                    </div>
-                                                    <span class="ratings-text">( 4 Reviews )</span>
-                                                </div>
+                                <div class="entry-item col-sm-6">
+                                    <article class="entry entry-grid">
+                                        <figure class="entry-media">
+                                            <a href="blog-single.html">
+                                                <img src="assets/images/blog/grid/3cols/post-5.jpg" alt="image desc">
+                                            </a>
+                                        </figure>
+                                        <div class="entry-body">
+                                            <div class="entry-meta">
+                                                <span>Nov 22, 2018</span>
+                                                <span class="meta-separator">|</span>
+                                                <span class="entry-author"> by <a href="#">John Doe</a>
+                                                </span>
+                                            </div>
+                                            <h2 class="entry-title">
+                                                <a href="blog-single.html">Aenean dignissim pellente squefelis.</a>
+                                            </h2>
+                                            <div class="entry-content">
+                                                <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque lectus ... </p>
+                                                <a href="blog-single.html" class="read-more">Read More</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-md-4 col-lg-4">
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="product-detail.html">
-                                                    <img src="assets/images/demos/demo-3/products/product-12.jpg"
-                                                        alt="Product image" class="product-image">
-                                                </a>
-                                                <div class="product-action-vertical">
-                                                    <a href="#" class="btn-product-icon btn-wishlist btn-expandable">
-                                                        <span>add to wishlist</span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action product-action-dark">
-                                                    <a href="#" class="btn-product btn-cart" title="Add to cart">
-                                                        <span>add to cart</span>
-                                                    </a>
-                                                </div>
-                                            </figure>
-                                            <div class="product-body">
-                                                <h3 class="product-title">
-                                                    <a href="product-detail.html">Bose - SoundLink Bluetooth Speaker</a>
-                                                </h3>
-                                                <div class="product-price"> $79.99 </div>
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width: 60%;"></div>
-                                                    </div>
-                                                    <span class="ratings-text">( 6 Reviews )</span>
-                                                </div>
+                                    </article>
+                                </div>
+                                <div class="entry-item col-sm-6">
+                                    <article class="entry entry-grid">
+                                        <figure class="entry-media">
+                                            <a href="blog-single.html">
+                                                <img src="assets/images/blog/grid/3cols/post-6.jpg" alt="image desc">
+                                            </a>
+                                        </figure>
+                                        <div class="entry-body">
+                                            <div class="entry-meta">
+                                                <span>Nov 22, 2018</span>
+                                                <span class="meta-separator">|</span>
+                                                <span class="entry-author"> by <a href="#">John Doe</a>
+                                                </span>
+                                            </div>
+                                            <h2 class="entry-title">
+                                                <a href="blog-single.html">Quisque volutpat mattiseros.</a>
+                                            </h2>
+                                            <div class="entry-content">
+                                                <p>Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque lectus. Donec consectetuer ... </p>
+                                                <a href="blog-single.html" class="read-more">Read More</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-md-4 col-lg-4">
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <span class="product-label label-circle label-new">New</span>
-                                                <a href="product-detail.html">
-                                                    <img src="assets/images/demos/demo-3/products/product-13.jpg"
-                                                        alt="Product image" class="product-image">
-                                                </a>
-                                                <div class="product-action-vertical">
-                                                    <a href="#" class="btn-product-icon btn-wishlist btn-expandable">
-                                                        <span>add to wishlist</span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action product-action-dark">
-                                                    <a href="#" class="btn-product btn-cart" title="Add to cart">
-                                                        <span>add to cart</span>
-                                                    </a>
-                                                </div>
-                                            </figure>
-                                            <div class="product-body">
-                                                <h3 class="product-title">
-                                                    <a href="product-detail.html">Apple - 11 Inch iPad Pro with Wi-Fi
-                                                        256GB </a>
-                                                </h3>
-                                                <div class="product-price"> $899.99 </div>
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width: 80%;"></div>
-                                                    </div>
-                                                    <span class="ratings-text">( 4 Reviews )</span>
-                                                </div>
+                                    </article>
+                                </div>
+                                <div class="entry-item col-sm-6">
+                                    <article class="entry entry-grid">
+                                        <figure class="entry-media">
+                                            <a href="blog-single.html">
+                                                <img src="assets/images/blog/grid/3cols/post-7.jpg" alt="image desc">
+                                            </a>
+                                        </figure>
+                                        <div class="entry-body">
+                                            <div class="entry-meta">
+                                                <span>Nov 22, 2018</span>
+                                                <span class="meta-separator">|</span>
+                                                <span class="entry-author"> by <a href="#">John Doe</a>
+                                                </span>
+                                            </div>
+                                            <h2 class="entry-title">
+                                                <a href="blog-single.html">Utaliquam sollicitudin leo.</a>
+                                            </h2>
+                                            <div class="entry-content">
+                                                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat ... </p>
+                                                <a href="blog-single.html" class="read-more">Read More</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-md-4 col-lg-4">
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <span class="product-label label-circle label-sale">Sale</span>
-                                                <a href="product-detail.html">
-                                                    <img src="assets/images/demos/demo-3/products/product-14.jpg"
-                                                        alt="Product image" class="product-image">
-                                                </a>
-                                                <div class="product-action-vertical">
-                                                    <a href="#" class="btn-product-icon btn-wishlist btn-expandable">
-                                                        <span>add to wishlist</span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action product-action-dark">
-                                                    <a href="#" class="btn-product btn-cart" title="Add to cart">
-                                                        <span>add to cart</span>
-                                                    </a>
-                                                </div>
-                                            </figure>
-                                            <div class="product-body">
-                                                <h3 class="product-title">
-                                                    <a href="product-detail.html">Google - Pixel 3 XL 128GB</a>
-                                                </h3>
-                                                <div class="product-price">
-                                                    <span class="new-price">$35.41</span>
-                                                    <span class="old-price">Was $41.67</span>
-                                                </div>
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width: 100%;"></div>
-                                                    </div>
-                                                    <span class="ratings-text">( 10 Reviews )</span>
-                                                </div>
+                                    </article>
+                                </div>
+                                <div class="entry-item col-sm-6">
+                                    <article class="entry entry-grid">
+                                        <figure class="entry-media">
+                                            <a href="blog-single.html">
+                                                <img src="assets/images/blog/grid/3cols/post-8.jpg" alt="image desc">
+                                            </a>
+                                        </figure>
+                                        <div class="entry-body">
+                                            <div class="entry-meta">
+                                                <span>Nov 22, 2018</span>
+                                                <span class="meta-separator">|</span>
+                                                <span class="entry-author"> by <a href="#">John Doe</a>
+                                                </span>
+                                            </div>
+                                            <h2 class="entry-title">
+                                                <a href="blog-single.html">Quisque a lectus. </a>
+                                            </h2>
+                                            <div class="entry-content">
+                                                <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque lectus ... </p>
+                                                <a href="blog-single.html" class="read-more">Read More</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-md-4 col-lg-4">
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="product-detail.html">
-                                                    <img src="assets/images/demos/demo-3/products/product-15.jpg"
-                                                        alt="Product image" class="product-image">
-                                                </a>
-                                                <div class="product-action-vertical">
-                                                    <a href="#" class="btn-product-icon btn-wishlist btn-expandable">
-                                                        <span>add to wishlist</span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action product-action-dark">
-                                                    <a href="#" class="btn-product btn-cart" title="Add to cart">
-                                                        <span>add to cart</span>
-                                                    </a>
-                                                </div>
-                                            </figure>
-                                            <div class="product-body">
-                                                <h3 class="product-title">
-                                                    <a href="product-detail.html">Samsung - 55" Class LED 2160p
-                                                        Smart</a>
-                                                </h3>
-                                                <div class="product-price"> $899.99 </div>
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width: 60%;"></div>
-                                                    </div>
-                                                    <span class="ratings-text">( 5 Reviews )</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-4 col-lg-4">
-                                        <div class="product product-2">
-                                            <figure class="product-media">
-                                                <a href="product-detail.html">
-                                                    <img src="assets/images/demos/demo-3/products/product-11.jpg"
-                                                        alt="Product image" class="product-image">
-                                                </a>
-                                                <div class="product-action-vertical">
-                                                    <a href="#" class="btn-product-icon btn-wishlist btn-expandable">
-                                                        <span>add to wishlist</span>
-                                                    </a>
-                                                </div>
-                                                <div class="product-action product-action-dark">
-                                                    <a href="#" class="btn-product btn-cart" title="Add to cart">
-                                                        <span>add to cart</span>
-                                                    </a>
-                                                </div>
-                                            </figure>
-                                            <div class="product-body">
-                                                <h3 class="product-title">
-                                                    <a href="product-detail.html">MacBook Pro 13" Display, i5</a>
-                                                </h3>
-                                                <div class="product-price"> $1,199.99 </div>
-                                                <div class="ratings-container">
-                                                    <div class="ratings">
-                                                        <div class="ratings-val" style="width: 100%;"></div>
-                                                    </div>
-                                                    <span class="ratings-text">( 4 Reviews )</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </article>
                                 </div>
                             </div>
                             <nav aria-label="Page navigation">
-                                <ul class="pagination justify-content-center">
+                                <ul class="pagination">
                                     <li class="page-item disabled">
-                                        <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1"
-                                            aria-disabled="true">
+                                        <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
                                             <span aria-hidden="true">
                                                 <i class="icon-long-arrow-left"></i>
                                             </span>Prev </a>
@@ -432,12 +353,7 @@
                                         <a class="page-link" href="#">2</a>
                                     </li>
                                     <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item-total">of 6</li>
-                                    <li class="page-item">
-                                        <a class="page-link page-link-next" href="#" aria-label="Next"> Next <span
-                                                aria-hidden="true">
+                                        <a class="page-link page-link-next" href="#" aria-label="Next"> Next <span aria-hidden="true">
                                                 <i class="icon-long-arrow-right"></i>
                                             </span>
                                         </a>
@@ -445,77 +361,119 @@
                                 </ul>
                             </nav>
                         </div>
-                        <aside class="col-lg-3 order-lg-first">
-                            <div class="sidebar sidebar-shop">
-                                <div class="widget widget-clean">
-                                    <label>Filters:</label>
-                                    <a href="#" class="sidebar-filter-clear">Clean All</a>
+                        <aside class="col-lg-3">
+                            <div class="sidebar">
+                                <div class="widget widget-search">
+                                    <h3 class="widget-title">Search</h3>
+                                    <form action="#">
+                                        <label for="ws" class="sr-only">Search in blog</label>
+                                        <input type="search" class="form-control" name="ws" id="ws" placeholder="Search in blog" required>
+                                        <button type="submit" class="btn">
+                                            <i class="icon-search"></i>
+                                            <span class="sr-only">Search</span>
+                                        </button>
+                                    </form>
                                 </div>
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-1" role="button" aria-expanded="true"
-                                            aria-controls="widget-1"> Category </a>
-                                    </h3>
-                                    <div class="collapse show" id="widget-1">
-                                        <div class="widget-body">
-                                            <div class="filter-items filter-items-count">
-                                                <div class="filter-item">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="cat-1">
-                                                        <label class="custom-control-label" for="cat-1">TV</label>
-                                                    </div>
-                                                    <span class="item-count">3</span>
-                                                </div>
-                                                <div class="filter-item">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="cat-2">
-                                                        <label class="custom-control-label"
-                                                            for="cat-2">Computers</label>
-                                                    </div>
-                                                    <span class="item-count">0</span>
-                                                </div>
-                                                <div class="filter-item">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="cat-3">
-                                                        <label class="custom-control-label" for="cat-3">Tablets & Cell
-                                                            Phones</label>
-                                                    </div>
-                                                    <span class="item-count">4</span>
-                                                </div>
-                                                <div class="filter-item">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="cat-4">
-                                                        <label class="custom-control-label"
-                                                            for="cat-4">Smartwatches</label>
-                                                    </div>
-                                                    <span class="item-count">2</span>
-                                                </div>
-                                                <div class="filter-item">
-                                                    <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="cat-5">
-                                                        <label class="custom-control-label"
-                                                            for="cat-5">Accessories</label>
-                                                    </div>
-                                                    <span class="item-count">2</span>
-                                                </div>
+                                <div class="widget widget-cats">
+                                    <h3 class="widget-title">Categories</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Lifestyle <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shopping <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fashion <span>1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Travel <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hobbies <span>2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget">
+                                    <h3 class="widget-title">Popular Posts</h3>
+                                    <ul class="posts-list">
+                                        <li>
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="assets/images/blog/sidebar/post-1.jpg" alt="post">
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span>Nov 22, 2018</span>
+                                                <h4>
+                                                    <a href="#">Aliquam tincidunt mauris eurisus.</a>
+                                                </h4>
                                             </div>
-                                        </div>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="assets/images/blog/sidebar/post-2.jpg" alt="post">
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span>Nov 19, 2018</span>
+                                                <h4>
+                                                    <a href="#">Cras ornare tristique elit.</a>
+                                                </h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="assets/images/blog/sidebar/post-3.jpg" alt="post">
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span>Nov 12, 2018</span>
+                                                <h4>
+                                                    <a href="#">Vivamus vestibulum ntulla nec ante.</a>
+                                                </h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <figure>
+                                                <a href="#">
+                                                    <img src="assets/images/blog/sidebar/post-4.jpg" alt="post">
+                                                </a>
+                                            </figure>
+                                            <div>
+                                                <span>Nov 25, 2018</span>
+                                                <h4>
+                                                    <a href="#">Donec quis dui at dolor tempor interdum.</a>
+                                                </h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget-banner-sidebar">
+                                    <div class="banner-sidebar-title">ad box 280 x 280</div>
+                                    <div class="banner-sidebar banner-overlay">
+                                        <a href="#">
+                                            <img src="assets/images/blog/sidebar/banner.jpg" alt="banner">
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-2" role="button" aria-expanded="true"
-                                            aria-controls="widget-5"> Price </a>
-                                    </h3>
-                                    <div class="collapse show" id="widget-2">
-                                        <div class="widget-body">
-                                            <div class="filter-price">
-                                                <div class="filter-price-text"> Price Range: <span
-                                                        id="filter-price-range"></span>
-                                                </div>
-                                                <div id="price-slider"></div>
-                                            </div>
-                                        </div>
+                                <div class="widget">
+                                    <h3 class="widget-title">Browse Tags</h3>
+                                    <div class="tagcloud">
+                                        <a href="#">fashion</a>
+                                        <a href="#">style</a>
+                                        <a href="#">women</a>
+                                        <a href="#">photography</a>
+                                        <a href="#">travel</a>
+                                        <a href="#">shopping</a>
+                                        <a href="#">hobbies</a>
                                     </div>
                                 </div>
                             </div>
@@ -531,11 +489,9 @@
                         <div class="col-sm-6 col-lg-5">
                             <div class="widget widget-about">
                                 <img src="assets/images/logo.svg" class="footer-logo" alt="Footer Logo" width="120">
-                                <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate
-                                    magna eros eu erat. </p>
+                                <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. </p>
                                 <div class="widget-call">
-                                    <i class="icon-phone"></i> Got Question? Call us 24/7 <a href="tel:#">098 9596
-                                        912</a>
+                                    <i class="icon-phone"></i> Got Question? Call us 24/7 <a href="tel:#">098 9596 912</a>
                                 </div>
                             </div>
                         </div>
@@ -648,7 +604,7 @@
                             <li>
                                 <a href="about.html">About Us</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="product.html">Product</a>
                             </li>
                             <li>
@@ -817,12 +773,13 @@
     <script src="assets/js/jquery.hoverIntent.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/superfish.min.js"></script>
-    <script src="assets/js/bootstrap-input-spinner.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/wNumb.js"></script>
-    <script src="assets/js/nouislider.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>
 
+
+<!-- molla/blog-grid-sidebar.html  22 Nov 2019 10:04:23 GMT -->
 </html>
